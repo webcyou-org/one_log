@@ -2,6 +2,20 @@
 name = "one_log"
 version = "0.1.0"
 edition = "2024"
+authors = ["Daisuke Takayama <info@webcyou.com>"]
+description = "Simple log call"
+license = "MIT"
+repository = "https://github.com/webcyou-org/one_log"
+homepage = "https://github.com/webcyou-org/one_log"
+readme = "README.md"
+
+[lib]
+name = "one_log"
+path = "src/lib.rs"
+
+[[bin]]
+name = "onelog"
+path = "src/main.rs"
 
 [dependencies]
 clap = { version = "4", features = ["derive"] }
